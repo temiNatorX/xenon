@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenon Shopping Cart - Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #4A90E2, #50C9C3);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            max-width: 400px;
+            width: 90%;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 120px;
+        }
+
+        .login-form h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #4A90E2;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #555;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .signin-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #4A90E2, #50C9C3);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .signin-btn:hover {
+            background: linear-gradient(to right, #50C9C3, #4A90E2);
+        }
+
+        .forgot-password {
+            display: block;
+            font-size: 12px;
+            color: #4A90E2;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .create-account-btn {
+            display: inline-block;
+            color: #4A90E2;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .create-account-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 20px;
+            }
+
+            .signin-btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="xenon.png" alt="Xenon Shopping Cart" class="logo-img">
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form">
+            <h2>Welcome Back!</h2>
+            <form action="dashboard.html" method="POST">
+                <label for="email">Email or Phone Number</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email or phone number" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+
+            <a href="#" class="forgot-password">Forgot your password?</a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <p>New to Xenon Shopping Cart?</p>
+            <a href="signup.html" class="create-account-btn">Create an Account</a>
+        </div>
+    </div>
+</body>
+</html>

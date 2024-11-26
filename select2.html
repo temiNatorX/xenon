@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select University - Xenon Shopping Cart</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #4A90E2, #50C9C3);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 30px;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            height: 80px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #4A90E2;
+        }
+
+        /* University Dropdown */
+        .university-selection p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .university-selection select {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .university-selection select:focus {
+            outline: none;
+            border-color: #4A90E2;
+        }
+
+        /* Button */
+        .university-selection button {
+            width: 80%;
+            padding: 12px;
+            background: linear-gradient(to right, #4A90E2, #50C9C3);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .university-selection button:hover {
+            background: linear-gradient(to right, #50C9C3, #4A90E2);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header img {
+                height: 60px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .university-selection button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="xenon.png" alt="Xenon Shopping Cart">
+            <h1>Select Your University</h1>
+        </div>
+
+        <!-- University Dropdown -->
+        <div class="university-selection">
+            <p>Select your university location to browse services:</p>
+            <form action="categories.html" method="get">
+                <select name="university" id="university" required>
+                    <option value="" disabled selected>Select a university</option>
+                    <option value="unilag">University of Lagos</option>
+                    <option value="babcock">Babcock University</option>
+                    <option value="covenant">Covenant University</option>
+                    <option value="oau">Obafemi Awolowo University</option>
+                    <option value="ui">University of Ibadan</option>
+                    <option value="unn">University of Nigeria, Nsukka</option>
+                    <option value="abu">Ahmadu Bello University</option>
+                    <option value="futa">Federal University of Technology, Akure</option>
+                </select>
+                <button type="submit">Continue</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendors - Food</title>
+    <style>
+ /* General Grid for Vendors */
+.vendor-grid {
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+
+.vendor {
+    text-align: center;
+}
+
+.vendor-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.header{
+    text-align: center;
+}
+
+.header > img{
+    height: 100px;
+    width: max-content;   
+}
+
+.choose{
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="restaurant.png" alt="Food Category" class="logo-img">
+            <h1>Food Vendors in Babcock University</h1>
+        </div>
+
+        <!-- Vendor List -->
+        <div class="vendor-list">
+            <p class="choose">Choose a vendor to place your order:</p>
+            <div class="vendor-grid">
+                <div class="vendor">
+                    <img src="eatery1.jpeg" alt="Tasty Bites" class="vendor-img">
+                    <p>Tasty Bites</p>
+                </div>
+                <div class="vendor">
+                    <img src="eatery2.jpg" alt="Mama Nkechi's Kitchen" class="vendor-img">
+                    <p>Mama Nkechi's Kitchen</p>
+                </div>
+                <div class="vendor">
+                    <img src="eatery3.jpeg" alt="Campus Cafe" class="vendor-img">
+                    <p>Campus Cafe</p>
+                </div>
+                <div class="vendor">
+                    <img src="eatery4.jpeg" alt="Quick Meals" class="vendor-img">
+                    <p>Quick Meals</p>
+                </div>
+                <div class="vendor">
+                    <img src="snack-hub.png" alt="The Snack Hub" class="vendor-img">
+                    <p>The Snack Hub</p>
+                </div>
+                <div class="vendor">
+                    <img src="daily-grills.png" alt="Daily Grills" class="vendor-img">
+                    <p>Daily Grills</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

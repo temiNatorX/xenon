@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Babcock University</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+        /* General Grid for Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding: 10px;
+}
+
+.category {
+    text-align: center;
+}
+
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+
+.header > img{
+    height: 100px;
+    width: max-content;   
+}
+
+.exp{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="babcock-logo.jpg" alt="Babcock University" class="logo-img">
+            <h1>Babcock University Services</h1>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <p class="exp">Explore the available categories:</p>
+            <div class="category-grid">
+                <div class="category">
+                    <img src="restaurant.png" alt="Food" class="category-icon">
+                    <p>Food</p>
+                </div>
+                <div class="category">
+                    <img src="technology.png" alt="Tech" class="category-icon">
+                    <p>Tech</p>
+                </div>
+                <div class="category">
+                    <img src="laundry.png" alt="Laundry" class="category-icon">
+                    <p>Laundry</p>
+                </div>
+                <div class="category">
+                    <img src="exchange.png" alt="Foreign Exchange" class="category-icon">
+                    <p>Foreign Exchange</p>
+                </div>
+                <div class="category">
+                    <img src="book.png" alt="Books" class="category-icon">
+                    <p>Books</p>
+                </div>
+                <div class="category">
+                    <img src="support.png" alt="Repair" class="category-icon">
+                    <p>Repair</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

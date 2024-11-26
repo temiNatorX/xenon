@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Babcock University</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #4A90E2, #50C9C3);
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .categories p {
+            font-size: 16px;
+            color: #1e2627;
+        }
+
+        /* Category Grid */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .category {
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header img {
+                height: 60px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .categories p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="babcock-logo.jpg" alt="Babcock University" class="logo-img">
+            <h1>Babcock University Services</h1>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <p>Explore the available categories:</p>
+            <div class="category-grid">
+                <div class="category">
+                    <img src="restaurant.png" alt="Food" class="category-icon">
+                    <p>Food</p>
+                </div>
+                <div class="category">
+                    <img src="technology.png" alt="Tech" class="category-icon">
+                    <p>Tech</p>
+                </div>
+                <div class="category">
+                    <img src="laundry.png" alt="Laundry" class="category-icon">
+                    <p>Laundry</p>
+                </div>
+                <div class="category">
+                    <img src="exchange.png" alt="Foreign Exchange" class="category-icon">
+                    <p>Foreign Exchange</p>
+                </div>
+                <div class="category">
+                    <img src="book.png" alt="Books" class="category-icon">
+                    <p>Books</p>
+                </div>
+                <div class="category">
+                    <img src="support.png" alt="Repair" class="category-icon">
+                    <p>Repair</p>
+                </div>
+                <div class="category">
+                    <img src="sports.png" alt="Sports" class="category-icon">
+                    <p>Sports</p>
+                </div>
+                <div class="category">
+                    <img src="health.png" alt="Health" class="category-icon">
+                    <p>Health Services</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
